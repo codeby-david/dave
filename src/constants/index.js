@@ -46,7 +46,7 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Mobile Application Developer",
     icon: mobile,
   },
   {
@@ -54,7 +54,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Frontend Developer",
     icon: creator,
   },
 ];
@@ -116,47 +116,52 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+  title: "Frontend Developer",
+  company_name: "University Computer Science Club",
+  icon: starbucks,
+  iconBg: "#383E56",
+  date: "March 2020 - April 2021",
+  points: [
+    "Built and maintained simple yet functional web applications as part of my learning journey in frontend development.",
+    "Worked closely with fellow club members and mentors to understand web development concepts and best practices.",
+    "Experimented with basic technologies like HTML, CSS, and JavaScript to create responsive user interfaces.",
+    "Gained hands-on experience with frameworks like React.js by contributing to small club projects.",
+    "Participated in peer-led code reviews to improve my skills and learn collaborative development processes.",
+  ],
+},
+
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
+  title: "Android App Development",
+  company_name: "Safaricom",
+  icon: tesla,
+  iconBg: "#E6DEDD",
+  date: "Jan 2021 - Feb 2022",
+  points: [
+    "Designed and developed high-performance Android applications to improve user experience and functionality.",
+    "Collaborated with cross-functional teams to integrate cutting-edge features into Safaricom's mobile applications.",
+    "Optimized application performance to ensure smooth operation across various Android devices.",
+    "Implemented secure and efficient code to safeguard user data and maintain high application standards.",
+    "Conducted user testing and debugging to identify and resolve issues, enhancing overall app quality.",
+  ],
+},
+{
     title: "Web Developer",
-    company_name: "Shopify",
+    company_name: "Shopify company",
     icon: shopify,
     iconBg: "#383E56",
     date: "Jan 2022 - Jan 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+  "Designed and developed user-friendly web interfaces to enhance customer experience and drive engagement.",
+  "Optimized website performance, reducing load times and improving SEO rankings across multiple projects.",
+  "Integrated third-party APIs and services to enhance functionality and deliver seamless user experiences.",
+  "Collaborated with UI/UX designers to implement visually appealing and highly functional design concepts.",
+  "Conducted thorough testing and debugging to identify and resolve issues, ensuring the highest quality standards.",
+],
+
   },
   {
     title: "Full stack Developer",
-    company_name: "Meta",
+    company_name: "freelancer",
     icon: meta,
     iconBg: "#E6DEDD",
     date: "Jan 2023 - Present",
@@ -172,7 +177,7 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+      "I thought it was impossible to make a website as beautiful as our product, but David proved me wrong.",
     name: "Sara Lee",
     designation: "CFO",
     company: "Acme Co",
@@ -180,7 +185,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+      "I've never met a web developer who truly cares about their clients' success like David does.",
     name: "Chris Brown",
     designation: "COO",
     company: "DEF Corp",
@@ -188,7 +193,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      "After David optimized our website, our traffic increased by 50%. We can't thank them enough!",
     name: "Lisa Wang",
     designation: "CTO",
     company: "456 Enterprises",
@@ -216,7 +221,7 @@ const projects = [
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/codeby-david",
   },
   {
     name: "Job IT",
@@ -237,7 +242,7 @@ const projects = [
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/codeby-david",
   },
   {
     name: "Trip Guide",
@@ -258,7 +263,7 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/codeby-david",
   },
 ];
 
