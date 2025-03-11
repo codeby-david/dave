@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -6,7 +6,8 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
 
-const FeedbackCard = ({
+// Memoized FeedbackCard to prevent unnecessary re-renders
+const FeedbackCard = memo(({
   index,
   testimonial,
   name,
@@ -17,6 +18,8 @@ const FeedbackCard = ({
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
     className='bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full'
+    style={{ willChange: "transform, opacity" }} // Hint browser for smoother animations
+    aria-label={`Testimonial by ${name}`}
   >
     <p className='text-white font-black text-[48px]'>"</p>
 
@@ -35,13 +38,14 @@ const FeedbackCard = ({
 
         <img
           src={image}
-          alt={`feedback_by-${name}`}
+          alt={`Feedback by ${name}`}
           className='w-10 h-10 rounded-full object-cover'
+          loading='lazy' // Lazy load images
         />
       </div>
     </div>
   </motion.div>
-);
+));
 
 const Feedbacks = () => {
   return (

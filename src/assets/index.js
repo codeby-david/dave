@@ -29,6 +29,10 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import hotel from "./hotel.png";
+import school from "./school.png";
+import university from "./university.png";
+import mypic from "./mypic.png";
 
 export {
   logo,
@@ -59,4 +63,9 @@ export {
   carrent,
   jobit,
   tripguide,
+  hotel,
+  school,
+  university,
+  mypic,
+ 
 };

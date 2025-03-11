@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -12,7 +12,17 @@ import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
-const ExperienceCard = ({ experience }) => {
+// Memoized ExperienceCard to prevent unnecessary re-renders
+const ExperienceCard = memo(({ experience }) => {
+  const {
+    date,
+    icon,
+    iconBg,
+    title,
+    company_name,
+    points,
+  } = experience;
+
   return (
     <VerticalTimelineElement
       contentStyle={{
@@ -20,30 +30,33 @@ const ExperienceCard = ({ experience }) => {
         color: "#fff",
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
-      date={experience.date}
-      iconStyle={{ background: experience.iconBg }}
+      date={date}
+      iconStyle={{ background: iconBg }}
       icon={
         <div className='flex justify-center items-center w-full h-full'>
           <img
-            src={experience.icon}
-            alt={experience.company_name}
+            src={icon}
+            alt={company_name}
             className='w-[60%] h-[60%] object-contain'
+            loading='lazy' // Lazy load images
+            aria-hidden='true' // Hide from screen readers (redundant with alt text)
           />
         </div>
       }
+      aria-label={`Experience at ${company_name}`}
     >
       <div>
-        <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
+        <h3 className='text-white text-[24px] font-bold'>{title}</h3>
         <p
           className='text-secondary text-[16px] font-semibold'
           style={{ margin: 0 }}
         >
-          {experience.company_name}
+          {company_name}
         </p>
       </div>
 
       <ul className='mt-5 list-disc ml-5 space-y-2'>
-        {experience.points.map((point, index) => (
+        {points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
             className='text-white-100 text-[14px] pl-1 tracking-wider'
@@ -54,7 +67,7 @@ const ExperienceCard = ({ experience }) => {
       </ul>
     </VerticalTimelineElement>
   );
-};
+});
 
 const Experience = () => {
   return (
