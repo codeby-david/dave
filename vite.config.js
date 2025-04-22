@@ -18,6 +18,7 @@ export default defineConfig({
         manualChunks: {
           three: ['three', '@react-three/fiber', '@react-three/drei'],
           framer: ['framer-motion'],
+          bvh: ['three-mesh-bvh'],
           vendor: ['react', 'react-dom', 'react-router-dom'],
         },
       },
