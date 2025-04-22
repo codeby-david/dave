@@ -2,7 +2,8 @@
 module.exports = {
   content: [
     "./index.html",
-    "./src/**/*.{js,jsx}"],
+    "./src/**/*.{js,jsx}",
+  "./node_modules/@react-three/**/*.{js,ts,jsx,tsx}"],
   mode: "jit",
   theme: {
     extend: {
